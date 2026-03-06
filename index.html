@@ -17,33 +17,30 @@
 <body class="bg-slate-100 text-slate-800 font-sans">
 
 
-<div class="max-w-5xl mx-auto bg-white shadow-xl p-8 my-4 rounded-xl">
+<div class="max-w-5xl mx-auto bg-white shadow-xl p-4 md:p-8 my-2 md:my-4 rounded-xl">
 
 <!-- HEADER -->
-<header class="border-b pb-6 mb-6">
-  <div class="flex gap-6">
+<header class="border-b pb-4 md:pb-6 mb-4 md:mb-6">
+  <div class="flex flex-col md:flex-row md:gap-6">
 
     <!-- 头像 -->
-    <div class="w-20 h-20 rounded-full bg-slate-200 flex-shrink-0 overflow-hidden">
+    <div class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-slate-200 flex-shrink-0 overflow-hidden mx-auto md:mx-0 mb-4 md:mb-0">
       <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=zhoulinfeng" alt="头像" class="w-full h-full">
     </div>
 
-    <div class="flex-1">
-      <div class="flex justify-between items-start">
-        <div>
-          <h1 class="text-3xl font-bold tracking-tight">周霖峰</h1>
-          <p class="text-base text-slate-600 mt-1">
-            <span class="font-medium text-blue-600">5 年前端开发经验</span>
-            <span class="text-slate-400 mx-2">|</span>
-            Node.js 全栈工程师 · 前端工程化 · Vibe coding拥抱者
-          </p>
+    <div class="flex-1 text-center md:text-left">
+      <h1 class="text-2xl md:text-3xl font-bold tracking-tight">周霖峰</h1>
+      <p class="text-sm md:text-base text-slate-600 mt-1">
+        <span class="font-medium text-blue-600">5 年前端开发经验</span>
+        <span class="hidden md:inline text-slate-400 mx-2">|</span>
+        <br class="md:hidden" />
+        <span class="text-slate-500">Node.js 全栈工程师</span>
+      </p>
 
-          <div class="flex flex-wrap gap-4 mt-2 text-sm text-slate-600">
-            <span>电话: 17361436756</span>
-            <span>邮箱: 1831792459@qq.com</span>
-            <span>年龄: 28岁</span>
-          </div>
-        </div>
+      <div class="flex flex-wrap justify-center md:justify-start gap-2 md:gap-4 mt-2 text-xs md:text-sm text-slate-600">
+        <span>电话: 17361436756</span>
+        <span>邮箱: 1831792459@qq.com</span>
+        <span>年龄: 28岁</span>
       </div>
     </div>
 
@@ -52,10 +49,10 @@
 
 
 <!-- 技术栈 -->
-<section class="mb-6">
-<h2 class="text-lg font-semibold mb-4">技术栈</h2>
+<section class="mb-4 md:mb-6">
+<h2 class="text-base md:text-lg font-semibold mb-3 md:mb-4">技术栈</h2>
 
-<div class="grid grid-cols-3 md:grid-cols-6 gap-3 text-xs">
+<div class="grid grid-cols-2 md:grid-cols-6 gap-2 md:gap-3 text-xs">
 
 <div>
 <h3 class="font-medium text-slate-700 mb-1">前端</h3>
@@ -82,34 +79,48 @@
 <p class="text-slate-500">Docker<br>Linux/Nginx<br>CI/CD</p>
 </div>
 
+<div>
+<h3 class="font-medium text-slate-700 mb-1">数据库</h3>
+<p class="text-slate-500">MySQL<br>Redis</p>
 </div>
 
-<div class="mt-3 text-xs text-slate-500">
-<span>组件库：</span>Ant Design · Element Plus · Vant · Radix UI · shadcn/ui · TailwindCSS
+</div>
+
+<div class="mt-2 md:mt-3">
+<div class="grid grid-cols-2 md:grid-cols-6 gap-2 text-xs">
+<div>
+<h3 class="font-medium text-slate-700">组件库</h3>
+<p class="text-slate-500">Ant Design<br>Element Plus<br>Vant</p>
+</div>
+<div>
+<h3 class="font-medium text-slate-700">UI框架</h3>
+<p class="text-slate-500">Radix UI<br>shadcn/ui<br>TailwindCSS</p>
+</div>
+</div>
 </div>
 </section>
 
 
 <!-- 工作经历 -->
-<section class="mb-6">
-<h2 class="text-lg font-semibold mb-4">工作经历</h2>
+<section class="mb-4 md:mb-6">
+<h2 class="text-base md:text-lg font-semibold mb-3 md:mb-4">工作经历</h2>
 
 
 <!-- 软通动力 -->
-<div class="mb-6 pl-4 border-l-4 border-blue-500">
-<div class="flex justify-between items-center mb-2">
+<div class="mb-4 md:mb-6 pl-3 md:pl-4 border-l-3 md:border-l-4 border-blue-500">
+<div class="flex flex-col md:flex-row md:justify-between md:items-center mb-2 gap-1">
   <div>
-    <h3 class="text-base font-semibold">软通动力 · 前端开发</h3>
+    <h3 class="text-sm md:text-base font-semibold">软通动力 · 前端开发</h3>
     <p class="text-xs text-slate-500 mt-1">百度智能办公体系 | AI Agent · 企业搜索 · 工作流自动化</p>
   </div>
-  <p class="text-sm text-slate-500 bg-slate-100 px-2 py-1 rounded">2024.07 - 至今</p>
+  <p class="text-xs md:text-sm text-slate-500 bg-slate-100 px-2 py-1 rounded self-start md:self-auto">2024.07 - 至今</p>
 </div>
 
-<ul class="list-disc pl-4 space-y-1 text-sm text-slate-700">
+<ul class="list-disc pl-3 md:pl-4 space-y-1 text-xs md:text-sm text-slate-700">
   <li>参与百度智能办公体系产品开发，负责如流平台<strong>超级助理 AI Agent 产品</strong>及其sdk的产品开发</li>
   <li>参与百度<strong>企业内部搜索系统</strong>前端开发，构建搜索结果展示组件及复杂数据展示页面</li>
-  <li>参与<strong>n8n 工作流系统私有化部署</strong>及自定义节点开发，扩展企业业务能力</li>
-  <li>配合<strong>工作流 + AI Agent + 企业办公平台已有能力</strong>，开发自动化办公工具，提升内部工作效率</li>
+  <li>参与<strong>n8n 工作流系统私有化部署及</strong>自定义节点开发，扩展企业业务能力</li>
+  <li>配合<strong>工作流 + AI Agent + 企业办公平台已有能力</strong>开发自动化办公工具，提升内部工作效率</li>
   <li>负责部分组件库能力的二次开发与封装</li>
   <li>代码仓库CI/CD处理</li>
   <li>使用 AI Coding 工具辅助开发，完成快速产品迭代，负责组件二次开发与封装</li>
@@ -118,58 +129,58 @@
 
 
 <!-- 成都网威 -->
-<div class="mb-6 pl-4 border-l-4 border-blue-500">
-<div class="flex justify-between items-center mb-2">
+<div class="mb-4 md:mb-6 pl-3 md:pl-4 border-l-3 md:border-l-4 border-blue-500">
+<div class="flex flex-col md:flex-row md:justify-between md:items-center mb-2 gap-1">
   <div>
-    <h3 class="text-base font-semibold">成都网威信息技术有限公司 · 前端开发</h3>
+    <h3 class="text-sm md:text-base font-semibold">成都网威信息技术有限公司 · 前端开发</h3>
     <p class="text-xs text-slate-500 mt-1">前端架构 · 组件库建设 · 中后台系统</p>
   </div>
-  <p class="text-sm text-slate-500 bg-slate-100 px-2 py-1 rounded">2023.05 - 2024.07</p>
+  <p class="text-xs md:text-sm text-slate-500 bg-slate-100 px-2 py-1 rounded self-start md:self-auto">2023.05 - 2024.07</p>
 </div>
 
-<ul class="list-disc pl-4 space-y-1 text-sm text-slate-700">
-  <li>负责公司前端项目 <strong>基础架构搭建与技术选型</strong>，推动前端工程化建设</li>
-  <li>主导公司 <strong>组件库体系建设</strong>，基于 Ant Design Vue 二次封装，编写组件文档</li>
-  <li>重构 Table 组件，增强扩展能力以适配多种业务展示需求</li>
-  <li>设计实现 <strong>CRUD 页面配置化方案</strong>，显著提升业务开发效率</li>
-  <li>搭建 Node.js Express 中间层服务，处理用户管理、码表数据与字段转换</li>
+<ul class="list-disc pl-3 md:pl-4 space-y-1 text-xs md:text-sm text-slate-700">
+  <li>负责公司前端项目<strong>基础架构搭建与技术选型</strong></li>
+  <li>主导公司<strong>组件库体系建设</strong>，基于 Ant Design Vue 二次封装</li>
+  <li>重构 Table 组件，增强扩展能力</li>
+  <li>设计实现<strong>CRUD 页面配置化方案</strong></li>
+  <li>搭建 Node.js Express 中间层服务</li>
 </ul>
 
 <div class="mt-2 text-xs text-slate-500 bg-slate-50 p-2 rounded">
-  <strong class="text-slate-700">项目：</strong>监狱管理综合系统（微应用 microApp 分模块持续集成）
+  <strong class="text-slate-700">项目：</strong>监狱管理综合系统（微应用 microApp）
 </div>
 </div>
 
 
 <!-- 浙江邦盛 -->
-<div class="mb-6 pl-4 border-l-4 border-blue-500">
-<div class="flex justify-between items-center mb-2">
+<div class="mb-4 md:mb-6 pl-3 md:pl-4 border-l-3 md:border-l-4 border-blue-500">
+<div class="flex flex-col md:flex-row md:justify-between md:items-center mb-2 gap-1">
   <div>
-    <h3 class="text-base font-semibold">浙江邦盛科技股份有限公司 · 前端开发</h3>
+    <h3 class="text-sm md:text-base font-semibold">浙江邦盛科技股份有限公司 · 前端开发</h3>
     <p class="text-xs text-slate-500 mt-1">金融投研系统 · 数据可视化 · 性能优化</p>
   </div>
-  <p class="text-sm text-slate-500 bg-slate-100 px-2 py-1 rounded">2021.07 - 2023.03</p>
+  <p class="text-xs md:text-sm text-slate-500 bg-slate-100 px-2 py-1 rounded self-start md:self-auto">2021.07 - 2023.03</p>
 </div>
 
-<ul class="list-disc pl-4 space-y-1 text-sm text-slate-700">
-  <li>参与 <strong>建信金科投研平台</strong> 开发，该系统用于量化投资组合管理、风险分析与绩效分析</li>
-  <li>负责多个数据可视化页面开发，使用 ECharts 与自定义图表组件实现复杂数据展示</li>
-  <li>针对大数据量页面进行性能优化：<strong>虚拟滚动、懒加载、Web Worker 并行计算</strong></li>
-  <li>维护基于 <strong>qiankun 微前端架构</strong> 的大型后台系统，参与多技术栈子应用开发</li>
+<ul class="list-disc pl-3 md:pl-4 space-y-1 text-xs md:text-sm text-slate-700">
+  <li>参与<strong>建信金科投研平台</strong>开发</li>
+  <li>负责多个数据可视化页面开发，使用 ECharts</li>
+  <li>针对大数据量页面进行性能优化：<strong>虚拟滚动、懒加载、Web Worker</strong></li>
+  <li>维护基于<strong>qiankun 微前端架构</strong>的大型后台系统</li>
 </ul>
 </div>
 
 
 <!-- 实习 -->
-<div class="pl-4 border-l-4 border-blue-500">
-<div class="flex justify-between items-center mb-2">
+<div class="pl-3 md:pl-4 border-l-3 md:border-l-4 border-blue-500">
+<div class="flex flex-col md:flex-row md:justify-between md:items-center mb-2 gap-1">
   <div>
-    <h3 class="text-base font-semibold">成都星河久远空间有限公司 · 前端开发实习</h3>
+    <h3 class="text-sm md:text-base font-semibold">成都星河久远空间有限公司 · 前端开发实习</h3>
   </div>
-  <p class="text-sm text-slate-500 bg-slate-100 px-2 py-1 rounded">2020.10 - 2021.04</p>
+  <p class="text-xs md:text-sm text-slate-500 bg-slate-100 px-2 py-1 rounded self-start md:self-auto">2020.10 - 2021.04</p>
 </div>
 
-<ul class="list-disc pl-4 space-y-1 text-sm text-slate-700">
+<ul class="list-disc pl-3 md:pl-4 space-y-1 text-xs md:text-sm text-slate-700">
   <li>参与政府信息采集系统 Web 页面开发</li>
   <li>开发小程序与表单系统页面，主要技术：Vue2 / uniapp</li>
 </ul>
@@ -180,12 +191,12 @@
 
 <!-- 教育经历 -->
 <section>
-<h2 class="text-lg font-semibold mb-3">教育经历</h2>
-<div class="flex items-center gap-2 text-sm text-slate-600 bg-slate-50 p-3 rounded-lg">
+<h2 class="text-base md:text-lg font-semibold mb-3">教育经历</h2>
+<div class="flex flex-col md:flex-row md:items-center gap-2 md:gap-2 text-sm text-slate-600 bg-slate-50 p-3 rounded-lg">
   <span class="font-semibold">宜宾学院</span>
-  <span class="text-slate-400">|</span>
+  <span class="hidden md:inline text-slate-400">|</span>
   <span>本科</span>
-  <span class="text-slate-400">|</span>
+  <span class="hidden md:inline text-slate-400">|</span>
   <span>2017 - 2021</span>
 </div>
 </section>
