@@ -29,39 +29,49 @@
 <body class="bg-slate-100 text-slate-800 font-sans">
 
 
-  <div class="md:w-[794px] mx-auto bg-white p-6">
+  <div class="max-w-screen-md md:w-[794px] mx-auto bg-white p-5 md:p-8 shadow-sm">
 
     <!-- HEADER -->
-    <header class="border-b pb-4 mb-2 md:mb-2">
-      <div class="flex flex-col md:flex-row md:gap-6">
+    <header class="pb-4 mb-4">
+      <div class="flex flex-col md:flex-row md:items-start gap-4 md:gap-4">
 
         <!-- 头像 -->
         <div
-          class="w-20 h-20 md:w-25 md:h-25 bg-slate-200 flex-shrink-0 rounded-full overflow-hidden mx-auto md:mx-0 mb-4 md:mb-0">
+          class="w-20 h-20 md:w-24 md:h-24 bg-slate-100 flex-shrink-0 rounded-full overflow-hidden mx-auto md:mx-0 ring-4 ring-slate-50">
           <img src="./head2.jpg" alt="头像" class="object-cover w-full h-full">
         </div>
 
         <div class="flex-1 text-center md:text-left">
-          <h1 class="text-2xl md:text-3xl font-bold tracking-tight">周霖峰</h1>
-          <p class="text-sm text-slate-600 font-semibold mt-2">
-            <span class="font-semibold">5年前端开发经验</span>
-            <span class="hidden md:inline text-slate-400 mx-2">|</span>
-            <span class="">Node.js 全栈开发者</span>
-            <span class="hidden md:inline mx-2">|</span>
+          <div class="flex flex-col md:flex-row md:items-baseline md:justify-between gap-1">
+            <h1 class="text-2xl md:text-3xl font-bold tracking-tight text-slate-900">周霖峰</h1>
+            <div
+              class="flex flex-wrap justify-center md:justify-end gap-x-3 gap-y-1 text-sm md:text-sm text-slate-500 font-medium">
+              <span>电话：17361436756</span>
+              <span class="hidden md:inline text-slate-300">|</span>
+              <span>邮箱：1831792459@qq.com</span>
+            </div>
+          </div>
+
+          <p
+            class="text-sm md:text-base text-slate-600 font-medium mt-2 flex flex-wrap justify-center md:justify-start items-center gap-2">
+            <span>5年前端开发经验</span>
+            <span class="w-1 h-1 bg-slate-300 rounded-full hidden md:block"></span>
+            <span>Node.js 全栈开发者</span>
+            <span class="w-1 h-1 bg-slate-300 rounded-full hidden md:block"></span>
             <span>Vibe coding 拥抱者</span>
           </p>
+
           <div
-            class="flex flex-wrap font-semibold justify-center md:justify-start gap-2 md:gap-4 text-xs md:text-sm text-slate-600">
-            <span>电话: 17361436756</span>
-            <span>邮箱: 1831792459@qq.com</span>
-            <span>年龄: 28岁</span>
-          </div>
-          <div class="flex mt-2 flex-row  md:items-center gap-2 md:gap-2 text-sm text-slate-600">
-            <span class="">宜宾学院</span>
-            <span class="hidden md:inline">|</span>
-            <span>本科</span>
-            <span class="hidden md:inline">|</span>
-            <span>2017 - 2021</span>
+            class="flex flex-wrap justify-center md:justify-start items-center gap-x-3 gap-y-1 mt-3 text-xs md:text-sm text-slate-600">
+            <div class="flex items-center gap-1">
+              <span class="font-medium">宜宾学院</span>
+              <span class="text-slate-300">/</span>
+              <span>本科</span>
+              <span class="text-slate-300">/</span>
+              <span class="">2017 - 2021</span>
+            </div>
+            <span class="text-slate-300 hidden md:inline">|</span>
+            <span>28岁</span>
           </div>
         </div>
 
@@ -70,148 +80,166 @@
 
 
     <!-- 技术栈 -->
-    <section class="mb-2 md:mb-4">
-      <h2 class="text-base md:text-lg font-semibold mb-2 md:mb-2">技术栈</h2>
+    <section class="mb-4">
+      <h2 class="text-lg md:text-xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+        <span class="w-1 h-5 bg-blue-600 rounded-full"></span>
+        技术栈
+      </h2>
 
-      <div class="grid grid-cols-2 md:grid-cols-7 gap-2 md:gap-3 text-xs">
-
-        <div>
-          <h3 class="font-medium text-slate-700 mb-1">前端</h3>
-          <p class="text-slate-500">JS/TS<br>React/Vue<br>Next.js</p>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-7 gap-4 text-xs md:text-sm">
+        <div class="space-y-1">
+          <h3 class="font-bold text-slate-800 ">前端</h3>
+          <p class="text-slate-600 leading-relaxed">JS / TS<br>React / Vue<br>Next.js</p>
         </div>
 
-        <div>
-          <h3 class="font-medium text-slate-700 mb-1">Node.js</h3>
-          <p class="text-slate-500">NestJS<br>Express</p>
+        <div class="space-y-1">
+          <h3 class="font-bold text-slate-800  ">Node.js</h3>
+          <p class="text-slate-600 leading-relaxed">NestJS<br>Express</p>
         </div>
 
-        <div>
-          <h3 class="font-medium text-slate-700 mb-1">工程化</h3>
-          <p class="text-slate-500">构建优化<br>组件封装<br>微前端</p>
+        <div class="space-y-1">
+          <h3 class="font-bold text-slate-800  ">工程化</h3>
+          <p class="text-slate-600 leading-relaxed">构建优化<br>组件封装<br>微前端</p>
         </div>
 
-        <div>
-          <h3 class="font-medium text-slate-700 mb-1">AI/自动化</h3>
-          <p class="text-slate-500">n8n工作流<br>AI Coding</p>
+        <div class="space-y-1">
+          <h3 class="font-bold text-slate-800  ">AI 自动化</h3>
+          <p class="text-slate-600 leading-relaxed">n8n 工作流<br>AI Coding</p>
         </div>
 
-        <div>
-          <h3 class="font-medium text-slate-700 mb-1">DevOps</h3>
-          <p class="text-slate-500">Docker<br>CI/CD</p>
+        <div class="space-y-1">
+          <h3 class="font-bold text-slate-800  ">DevOps</h3>
+          <p class="text-slate-600 leading-relaxed">Docker<br>CI / CD</p>
         </div>
 
-        <div>
-          <h3 class="font-medium text-slate-700">组件库</h3>
-          <p class="text-slate-500">Ant Design<br>Element Plus<br>Vant</p>
+        <div class="space-y-1">
+          <h3 class="font-bold text-slate-800  ">组件库</h3>
+          <p class="text-slate-600 leading-relaxed">Ant Design<br>Element Plus<br>Vant</p>
         </div>
 
-        <div>
-          <h3 class="font-medium text-slate-700">UI框架</h3>
-          <p class="text-slate-500">Radix UI<br>shadcn/ui<br>TailwindCSS</p>
+        <div class="space-y-1">
+          <h3 class="font-bold text-slate-800  ">UI 框架</h3>
+          <p class="text-slate-600 leading-relaxed">Radix UI<br>shadcn / ui<br>TailwindCSS</p>
         </div>
       </div>
     </section>
 
 
     <!-- 工作经历 -->
-    <section class="mb-4">
-      <h2 class="text-base md:text-lg font-semibold mb-3 md:mb-4">工作经历</h2>
+    <section class="mb-6">
+      <h2 class="text-lg md:text-xl font-bold text-slate-900 mb-6 flex items-center gap-2">
+        <span class="w-1 h-5 bg-blue-600 rounded-full"></span>
+        工作经历
+      </h2>
 
 
       <!-- 软通动力 -->
-      <div class="mb-4 pl-3 md:pl-4 border-l-3 md:border-l-4 border-blue-500">
-        <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-2 gap-1">
+      <div
+        class="mb-8 relative pl-6 before:absolute before:left-0 before:top-2 before:bottom-0 before:w-0.5 before:bg-slate-100">
+        <div class="absolute left-[-4px] top-2 w-2.5 h-2.5 rounded-full bg-blue-600 ring-4 ring-white"></div>
+
+        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-3 gap-2">
           <div>
-            <h3 class="text-sm md:text-base font-semibold">软通动力 · 前端开发</h3>
-            <p class="text-xs text-slate-500 mt-1">百度智能办公体系 | AI Agent · 企业搜索 · 工作流自动化</p>
+            <h3 class="text-base md:text-lg font-bold text-slate-800">软通动力 · 前端开发</h3>
+            <p class="text-sm text-slate-600 font-medium mt-1">百度智能办公体系 | AI Agent · 企业搜索 · 工作流自动化</p>
           </div>
-          <p class="text-xs md:text-sm text-slate-500 bg-slate-100 px-2 py-1 rounded self-start md:self-auto">2024.07 -
-            至今</p>
+          <p
+            class="text-xs md:text-sm font-bold text-slate-500 px-3 py-1 self-start">
+            2024.07 - 至今</p>
         </div>
 
-        <ul class="list-disc pl-3 md:pl-4 space-y-1 text-xs md:text-sm text-slate-700">
-          <li>参与百度智能办公体系产品开发，负责如流平台<strong>超级助理 AI Agent 产品</strong>及其sdk的产品开发</li>
-          <li>参与百度<strong>企业内部搜索系统</strong>前端开发，构建搜索结果展示组件及复杂数据展示页面</li>
-          <li>参与<strong>n8n 工作流系统私有化部署及</strong>自定义节点开发，扩展企业业务能力</li>
-          <li>配合<strong>工作流 + AI Agent + 企业办公平台已有能力</strong>开发自动化办公工具，提升内部工作效率</li>
-          <li>负责部分组件库能力的二次开发与封装</li>
-          <li>代码仓库CI/CD处理</li>
+        <ul class="list-disc pl-4 space-y-2 text-sm text-slate-600 leading-relaxed">
+          <li>参与百度智能办公体系产品开发，负责如流平台 <strong>超级助理 AI Agent 产品</strong> 及其 SDK 的产品开发</li>
+          <li>参与百度 <strong>企业内部搜索系统</strong> 前端开发，构建搜索结果展示组件及复杂数据展示页面</li>
+          <li>参与 <strong>n8n 工作流系统私有化部署</strong> 及自定义节点开发，扩展企业业务能力</li>
+          <li>配合 <strong>工作流 + AI Agent + 企业办公平台已有能力</strong> 开发自动化办公工具，提升效率</li>
+          <li>负责部分组件库能力的二次开发与封装及代码仓库 CI/CD 处理</li>
           <li>使用 AI Coding 工具辅助开发，完成快速产品迭代，负责组件二次开发与封装</li>
         </ul>
-        <div class="mt-2 flex flex-wrap gap-1">
-          <span class="text-xs bg-blue-50 text-blue-700 px-2 py-0.5 rounded">React</span>
-          <span class="text-xs bg-blue-50 text-blue-700 px-2 py-0.5 rounded">Nest</span>
-          <span class="text-xs bg-blue-50 text-blue-700 px-2 py-0.5 rounded">Radix UI</span>
-          <span class="text-xs bg-blue-50 text-blue-700 px-2 py-0.5 rounded">shadcn/ui</span>
-          <span class="text-xs bg-blue-50 text-blue-700 px-2 py-0.5 rounded">Monorepo</span>
+
+        <div class="mt-4 flex flex-wrap gap-2">
+          <span class="text-[10px] md:text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded">React</span>
+          <span class="text-[10px] md:text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded">NestJS</span>
+          <span class="text-[10px] md:text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded">Radix UI</span>
+          <span class="text-[10px] md:text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded">shadcn/ui</span>
+          <span class="text-[10px] md:text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded">Monorepo</span>
         </div>
       </div>
 
 
       <!-- 成都网威 -->
-      <div class="mb-4 md:mb-6 pl-3 md:pl-4 border-l-3 md:border-l-4 border-blue-500">
-        <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-2 gap-1">
+      <div
+        class="mb-8 relative pl-6 before:absolute before:left-0 before:top-2 before:bottom-0 before:w-0.5 before:bg-slate-100">
+        <div class="absolute left-[-4px] top-2 w-2.5 h-2.5 rounded-full bg-slate-300 ring-4 ring-white"></div>
+
+        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-3 gap-2">
           <div>
-            <h3 class="text-sm md:text-base font-semibold">成都网威信息技术有限公司 · 前端开发</h3>
-            <p class="text-xs text-slate-500 mt-1">前端架构 · 组件库建设 · 中后台系统</p>
+            <h3 class="text-base md:text-lg font-bold text-slate-800">成都网威信息技术有限公司 · 前端开发</h3>
+            <p class="text-sm text-slate-500 font-medium mt-1">前端架构 · 组件库建设 · 中后台系统</p>
           </div>
-          <p class="text-xs md:text-sm text-slate-500 bg-slate-100 px-2 py-1 rounded self-start md:self-auto">2023.05 -
-            2024.07</p>
+          <p
+            class="text-xs md:text-sm font-bold text-slate-500 px-3 py-1 self-start">
+            2023.05 - 2024.07</p>
         </div>
 
-        <ul class="list-disc pl-3 md:pl-4 space-y-1 text-xs md:text-sm text-slate-700">
-          <li>负责公司前端项目<strong>基础架构搭建与技术选型</strong></li>
-          <li>主导公司<strong>组件库体系建设</strong>，基于 Ant Design Vue 二次封装</li>
-          <li>重构 Table 组件，增强扩展能力</li>
-          <li>设计实现<strong>CRUD 页面配置化方案</strong></li>
-          <li>搭建 Node.js Express 中间层服务</li>
+        <ul class="list-disc pl-4 space-y-2 text-sm text-slate-600 leading-relaxed">
+          <li>负责公司前端项目 <strong>基础架构搭建与技术选型</strong></li>
+          <li>主导公司 <strong>组件库体系建设</strong>，基于 Ant Design Vue 二次封装，重构 Table 组件</li>
+          <li>设计实现 <strong>CRUD 页面配置化方案</strong>，搭建 Node.js Express 中间层服务</li>
         </ul>
 
-        <div class="mt-2 flex flex-wrap gap-1">
-          <span class="text-xs bg-green-50 text-green-700 px-2 py-0.5 rounded">Vue2</span>
-          <span class="text-xs bg-green-50 text-green-700 px-2 py-0.5 rounded">Vue3</span>
-          <span class="text-xs bg-green-50 text-green-700 px-2 py-0.5 rounded">Antd</span>
-          <span class="text-xs bg-green-50 text-green-700 px-2 py-0.5 rounded">Monorepo</span>
-        </div>
-
-        <div class="mt-2 text-xs text-slate-500 bg-slate-50 p-2 rounded">
-          <strong class="text-slate-700">项目：</strong>监狱管理综合系统（微应用 microApp）
+        <div class="mt-4 flex flex-wrap gap-2">
+          <span class="text-[10px] md:text-xs bg-emerald-100 text-emerald-700 px-2 py-1 rounded">Vue2 /
+            3</span>
+          <span class="text-[10px] md:text-xs bg-emerald-100 text-emerald-700 px-2 py-1 rounded">Ant
+            Design</span>
+          <span
+            class="text-[10px] md:text-xs bg-emerald-100 text-emerald-700 px-2 py-1 rounded">MicroApp</span>
+          <span class="text-[10px] md:text-xs bg-emerald-100 text-emerald-700 px-2 py-1 rounded">Express</span>
         </div>
       </div>
 
 
       <!-- 浙江邦盛 -->
-      <div class="mb-4 md:mb-6 pl-3 md:pl-4 border-l-3 md:border-l-4 border-blue-500">
-        <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-2 gap-1">
+      <div
+        class="mb-8 relative pl-6 before:absolute before:left-0 before:top-2 before:bottom-0 before:w-0.5 before:bg-slate-100">
+        <div class="absolute left-[-4px] top-2 w-2.5 h-2.5 rounded-full bg-slate-300 ring-4 ring-white"></div>
+
+        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-3 gap-2">
           <div>
-            <h3 class="text-sm md:text-base font-semibold">浙江邦盛科技股份有限公司 · 前端开发</h3>
-            <p class="text-xs text-slate-500 mt-1">金融投研系统 · 数据可视化 · 性能优化</p>
+            <h3 class="text-base md:text-lg font-bold text-slate-800">浙江邦盛科技股份有限公司 · 前端开发</h3>
+            <p class="text-sm text-slate-500 font-medium mt-1">金融投研系统 · 数据可视化 · 性能优化</p>
           </div>
-          <p class="text-xs md:text-sm text-slate-500 bg-slate-100 px-2 py-1 rounded self-start md:self-auto">2021.07 -
-            2023.03</p>
+          <p
+            class="text-xs md:text-sm font-bold text-slate-500  px-3 py-1 self-start">
+            2021.07 - 2023.03</p>
         </div>
 
-        <ul class="list-disc pl-3 md:pl-4 space-y-1 text-xs md:text-sm text-slate-700">
-          <li>参与<strong>建信金科投研平台</strong>开发</li>
-          <li>负责多个数据可视化页面开发，使用 ECharts</li>
-          <li>针对大数据量页面进行性能优化：<strong>虚拟滚动、懒加载、Web Worker</strong></li>
-          <li>维护基于<strong>qiankun 微前端架构</strong>的大型后台系统</li>
+        <ul class="list-disc pl-4 space-y-2 text-sm text-slate-600 leading-relaxed">
+          <li>参与 <strong>建信金科投研平台</strong> 开发，负责多个 ECharts 数据可视化页面</li>
+          <li>针对大数据量页面进行性能优化：<strong>虚拟滚动、懒加载、web worker</strong></li>
+          <li>维护基于 <strong>qiankun 微前端架构</strong> 的大型后台系统</li>
         </ul>
-        <div class="mt-2 flex flex-wrap gap-1">
-          <span class="text-xs bg-orange-50 text-orange-700 px-2 py-0.5 rounded">Vue2</span>
-          <span class="text-xs bg-orange-50 text-orange-700 px-2 py-0.5 rounded">Element</span>
+        <div class="mt-4 flex flex-wrap gap-2">
+          <span class="text-[10px] md:text-xs bg-orange-100 text-orange-700 px-2 py-1 rounded">Vue2</span>
+          <span class="text-[10px] md:text-xs bg-orange-100 text-orange-700 px-2 py-1 rounded">Element
+            UI</span>
+          <span class="text-[10px] md:text-xs bg-orange-100 text-orange-700 px-2 py-1 rounded">ECharts</span>
+          <span class="text-[10px] md:text-xs bg-orange-100 text-orange-700 px-2 py-1 rounded">qiankun</span>
         </div>
       </div>
 
 
       <!-- 实习 -->
-      <div class="pl-3 md:pl-4 border-l-3 md:border-l-4 border-blue-500">
-        <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-2 gap-1">
+      <div class="relative pl-6">
+        <div class="absolute left-[-4px] top-2 w-2.5 h-2.5 rounded-full bg-slate-300 ring-4 ring-white"></div>
+        <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-2">
           <div>
-            <h3 class="text-sm md:text-base font-semibold">成都星河久远空间有限公司 · 前端开发实习</h3>
+            <h3 class="text-base md:text-lg font-bold text-slate-800">成都星河久远空间有限公司 · 前端实习</h3>
           </div>
-          <p class="text-xs md:text-sm text-slate-500 bg-slate-100 px-2 py-1 rounded self-start md:self-auto">2020.10 -
-            2021.04</p>
+          <p
+            class="text-xs md:text-sm font-bold text-slate-500 px-3 py-1  self-start">
+            2020.10 - 2021.04</p>
         </div>
       </div>
 
