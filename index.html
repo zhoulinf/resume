@@ -22,6 +22,11 @@
         margin: 0 !important;
         padding: 30px !important;
       }
+
+      .print-break-after {
+        break-after: page;
+        page-break-after: always;
+      }
     }
   </style>
 </head>
@@ -29,7 +34,7 @@
 <body class="text-slate-800 font-sans">
 
 
-  <div class="max-w-screen-md md:w-[794px] mx-auto bg-white p-5 md:p-6 shadow-sm">
+  <div class="max-w-screen-md md:w-[794px] mx-auto bg-white p-5">
 
     <!-- HEADER -->
     <header class="pb-4 mb-4">
@@ -166,10 +171,10 @@
               <p class="text-sm font-semibold text-slate-700">超级助理</p>
               <p class="text-xs text-slate-500 mt-0.5 leading-relaxed">百度内部 AI 工作助手，提供信息查询、流水线绑定、智能客服、多 Agent 调用等功能</p>
               <ul class="list-disc pl-4 mt-1.5 text-xs text-slate-600 space-y-0.5">
-                <li><strong>SSE 消息管理 + 多内容展示：</strong>处理兼容不同模型返回，支持多种内容类型展示及交互</li>
-                <li><strong>Markdown 内容兼容：</strong>针对模型输出格式差异进行适配和显示优化</li>
-                <li><strong>复杂输入框组件开发：</strong>开发高扩展性输入框组件，支持用户插件化拓展</li>
-                <li><strong>SDK 维护：</strong>持续发布和更新智能客服接入 SDK，支持外部应用快速集成</li>
+                <li>SSE 消息管理 + 多内容展示：处理兼容不同模型返回，支持多种内容类型展示及交互</li>
+                <li>Markdown 内容兼容：针对模型输出格式差异进行适配和显示优化</li>
+                <li>复杂输入框组件开发：开发高扩展性输入框组件，支持用户插件化拓展</li>
+                <li>SDK 维护：持续发布和更新智能客服接入 SDK，支持外部应用快速集成</li>
               </ul>
             </div>
             <div>
@@ -184,24 +189,21 @@
               </ul>
             </div>
 
-            <div>
+            <div class="print-break-after">
               <p class="text-sm font-semibold text-slate-700">百度内搜</p>
+              <p class="text-xs text-slate-500 mt-0.5 leading-relaxed">百度内部专用的综合性搜索平台</p>
               <ul class="list-disc pl-4 mt-1.5 text-xs text-slate-600 space-y-0.5">
-                <li><strong>个人工作台：</strong>任务管理功能开发、删除任务弹窗展示修复</li>
-                <li><strong>知识库 Wiki：</strong>搜索体验优化、用户反馈功能、满意度调研嵌入</li>
-                <li><strong>客服系统：</strong>客服侧群聊功能、前端资源整合</li>
+                <li>复杂搜索结果页面组件展示</li>
+                <li>维护百度内搜node转换层接口服务</li>
               </ul>
             </div>
             <div>
-              <p class="text-sm font-semibold text-slate-700">如流搜索</p>
-              <p class="text-xs text-slate-500 mt-0.5 leading-relaxed">前端与原生应用混合开发，作为子项嵌入如流搜索栏</p>
-            </div>
-            <div>
-              <p class="text-sm font-semibold text-slate-700">其他创新项目</p>
+              <p class="text-sm font-semibold text-slate-700">其他项目</p>
               <p class="text-xs text-slate-500 mt-0.5 leading-relaxed">基于 Claude Code 实践 Vibe Coding (Skills) 快速产品开发</p>
               <ul class="list-disc pl-4 mt-1.5 text-xs text-slate-600 space-y-0.5">
                 <li><strong>OneAgent：</strong>后台环境自动化操作，支持前端沙箱环境浏览器自动化</li>
-                <li><strong>模型体验台：</strong>Beta 产品，支持多模型生成效果对比与快速体验</li>
+                <li><strong>如流搜索：</strong>前端与原生应用混合开发，作为子项嵌入如流搜索栏</li>
+                <li><strong>模型体验台：</strong>Beta 产品，支持多模型生成效果对比与快速体验（Nest开发）</li>
                 <li><strong>如流侧边栏：</strong>Demo 产品，结合工作卡与多维表，实现项目管理 + 通知展示</li>
               </ul>
             </div>
