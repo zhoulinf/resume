@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>侯彦平 - 设备维修保养工程师</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .top-curve {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 60px;
+      background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+      border-bottom-left-radius: 50% 20px;
+      border-bottom-right-radius: 50% 20px;
+      overflow: hidden;
+      z-index: 0;
+    }
+
+    @media print {
+      body {
+        background: white;
+        padding: 0;
+      }
+
+      .no-print {
+        display: none !important;
+      }
+
+      .top-curve {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-slate-50 min-h-screen p-5 text-slate-800 antialiased">
+
+  <div class="max-w-4xl mx-auto bg-white shadow-sm p-5 relative overflow-hidden">
+    <div class="top-curve"></div>
+
+    <!-- 头部 -->
+    <header class="pb-3 mb-2 relative">
+      <div class="flex flex-col md:flex-row md:items-start gap-4 pt-8 pl-4">
+
+        <!-- 头像 -->
+        <div
+          class="w-24 h-24 md:w-24 md:h-24 bg-slate-100 flex-shrink-0 rounded-full overflow-hidden mx-auto md:mx-0 relative z-20 -mt-4 border-4 border-white">
+          <img src="./header.webp" alt="头像" class="object-cover w-full h-full">
+        </div>
+
+        <div class="flex-1 text-center md:text-left">
+          <div class="flex flex-col md:flex-row md:items-baseline md:justify-between gap-1">
+            <h1 class="text-2xl md:text-3xl font-bold tracking-tight text-slate-900">侯彦平</h1>
+            <div
+              class="flex flex-wrap justify-center md:justify-end gap-x-3 gap-y-1 text-sm text-slate-500 font-medium">
+              <span>电话：15520853113</span>
+              <span class="hidden md:inline text-slate-300">|</span>
+              <span>邮箱：564251728@qq.com</span>
+            </div>
+          </div>
+
+          <p
+            class="text-sm text-slate-600 font-medium mt-2 flex flex-wrap justify-center md:justify-start items-center gap-2">
+            <span>6年工作经验</span>
+            <span class="w-1 h-1 bg-slate-300 rounded-full hidden md:block"></span>
+            <span>设备维修保养工程师</span>
+            <span class="w-1 h-1 bg-slate-300 rounded-full hidden md:block"></span>
+            <span>中级电工证</span>
+          </p>
+
+          <div
+            class="flex flex-wrap justify-center md:justify-start items-center gap-x-3 gap-y-1 mt-1 text-sm text-slate-600">
+            <div class="flex items-center gap-1">
+              <span>成都航空职业技术大学</span>
+              <span class="text-slate-300">/</span>
+              <span>大专</span>
+              <span class="text-slate-300">/</span>
+              <span>飞机电子设备维修</span>
+            </div>
+            <span class="text-slate-300 hidden md:inline">|</span>
+            <span>28岁</span>
+            <span class="text-slate-300 hidden md:inline">|</span>
+            <span>男</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <!-- 核心技能 -->
+    <section class="mb-6">
+      <h2 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-2">
+        <span class="w-1 h-5 bg-blue-600 rounded-full"></span>
+        核心技能
+      </h2>
+
+      <ul class="list-disc pl-5 text-slate-600 leading-relaxed space-y-1 bg-slate-50 rounded-lg p-4"
+        style="font-size: 14px;">
+        <li><strong class="font-semibold text-blue-700">工控机刷机调试：</strong>熟练掌握各类工控机的系统刷机、驱动配置及参数调优</li>
+        <li><strong class="font-semibold text-blue-700">Modbus 协议：</strong>精通 Modbus RTU/TCP 协议，独立完成设备通信调试与故障排查</li>
+        <li><strong class="font-semibold text-blue-700">串口通信配置：</strong>RS-485、RS-232 串口通信参数设置、设备联调与故障处理</li>
+        <li><strong class="font-semibold text-blue-700">工业以太网配置：</strong>工业路由器、交换机配置，网口通信调试，保障设备数据交互稳定</li>
+        <li><strong class="font-semibold text-blue-700">电气控制柜维护：</strong>各类电气元件故障排查，电工工具熟练使用，逻辑控制电路设计与接线</li>
+        <li><strong class="font-semibold text-blue-700">预防性维护：</strong>设备巡检、故障台账梳理、高频故障根因分析与优化方案输出</li>
+        <li><strong class="font-semibold text-blue-700">设备保养：</strong>油泵、滤芯、传动皮带等易损部件更换调试，润滑传动系统维护</li>
+      </ul>
+    </section>
+
+
+    <!-- 工作经历 -->
+    <section class="mb-6">
+      <h2 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-2">
+        <span class="w-1 h-5 bg-blue-600 rounded-full"></span>
+        工作经历
+      </h2>
+
+      <!-- 深圳市丰巢科技有限公司 -->
+      <div class="mb-5 relative">
+        <div class="absolute left-[5px] top-[28px] bottom-0 w-0.5 bg-blue-100"></div>
+        <div class="flex items-start gap-1">
+          <div class="w-2.5 h-2.5 rounded-full bg-blue-600 ring-4 ring-white flex-shrink-0 mt-[23px] relative z-10"></div>
+          <div class="flex-1">
+            <div class="bg-slate-50 rounded-lg p-4">
+              <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2 gap-1">
+                <div>
+                  <h3 class="text-base font-bold text-slate-800">深圳市丰巢科技有限公司 · 运维工程师</h3>
+                  <p class="text-xs text-slate-500 font-medium mt-0.5">智能终端设备运维 · 预防性维护 · 故障排查</p>
+                </div>
+                <p class="text-sm px-2 py-1 md:py-0 font-medium">2021.07 - 2026.02</p>
+              </div>
+              <ul class="list-disc pl-5 text-slate-600 leading-relaxed space-y-1 mt-3" style="font-size: 14px;">
+                <li>负责工控机、电气控制柜、工业路由器、交换机等智能终端设备的日常巡检、故障排查与预防性维保，通过标准化巡检流程将设备停机率降低 <span
+                    class="text-blue-600 font-medium">15%</span>，保障设备 7×24 小时稳定运行</li>
+                <li>独立完成新设备安装、工业以太网配置、资产烧录、系统激活全流程，制定标准化调试手册，缩短设备上线周期 <span class="text-blue-600 font-medium">20%</span>
+                </li>
+                <li>精通 Modbus RTU/TCP 协议，独立完成 RS-485、RS-232 串口通信配置及工业以太网网络规划，解决设备通信故障，保障各终端设备数据交互稳定可靠</li>
+                <li>对电气控制柜进行系统化维护，包括断路器、接触器、继电器、变频器等电气元件的故障诊断与更换，绘制电气原理图，优化控制电路设计</li>
+                <li>建立设备预防性维护体系，制定维护保养标准，从被动维修转向主动预防，降低故障发生率</li>
+                <li>具备快速响应与独立排查复杂故障能力，可在设备紧急停机时快速定位根因并完成抢修，最大限度减少生产损失</li>
+                <li>收集分析设备故障数据，识别高频故障点及根本原因，输出系统性优化方案，从技术和管理层面降低故障复发率</li>
+                <li>编写设备维护手册、故障处理指南及技术文档，建立设备知识库，沉淀运维经验</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 德阳三环科技有限公司 -->
+      <div class="mb-5 relative">
+        <div class="absolute left-[5px] top-[28px] bottom-0 w-0.5 bg-blue-100"></div>
+        <div class="flex items-start gap-1">
+          <div class="w-2.5 h-2.5 rounded-full bg-blue-300 ring-4 ring-white flex-shrink-0 mt-[23px] relative z-10"></div>
+          <div class="flex-1">
+            <div class="bg-slate-50 rounded-lg p-4">
+              <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-2 gap-1">
+                <div>
+                  <h3 class="text-base font-bold text-slate-800">德阳三环科技有限公司 · 机修工</h3>
+                  <p class="text-xs text-slate-500 font-medium mt-0.5">印刷设备维护 · 日常巡检 · 工艺优化</p>
+                </div>
+                <p class="text-sm px-2 py-1 md:py-0 font-medium">2020.07 - 2021.05</p>
+              </div>
+              <ul class="list-disc pl-5 text-slate-600 leading-relaxed space-y-1 mt-3" style="font-size: 14px;">
+                <li>执行辊印机/丝印机日常巡检，检查传感器数据并校准（对位偏差、张力、压力等），记录运行参数，及时发现设备异常</li>
+                <li>熟练操作设备仪表及人机界面，进行参数设置、模式切换与运行监控，及时处理报警信息，分析故障代码，快速恢复生产</li>
+                <li>执行设备定期保养计划，独立完成油泵、滤芯、传动皮带等易损部件的更换与调试，确保润滑、传动系统正常运转</li>
+                <li>根据生产工艺要求，精准调整印刷设备刮刀位置、角度及压力，优化印刷状态，减少印刷不良率，提升产品一致性</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+</body>
+
+</html>
